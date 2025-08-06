@@ -1,167 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Md Parvez</title>
-  <meta name="description" content="My name is Md Parvez, and I'm a dedicated mobile app developer with expertise in Flutter and Android."/>
-  <meta name="keywords" content="md parvez, parvez24h, parvez">
-  <link rel="shortcut icon" href="img/parvez.jpg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Parvez - Mobile App Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
-
 <body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar">
-        <div class="brand">
-          <a href="index.html">
-            <h1><span>M</span>d <span>P</span>arvez</h1>
-          </a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Md Parvez</div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="nav-list">
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-          <ul>
-            <li><a href="index.html" data-after="Home">Home</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="#services" data-after="Service">Service</a></li>
-            <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Header -->
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm Md Parvez</h1>
+            <p class="hero-description">Mobile App Developer (Android & Flutter)</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/parvez24h" target="_blank" class="social-link" style="--i: 1" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/parvez24h" target="_blank" class="social-link" style="--i: 2" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/parvez24h" target="_blank" class="social-link" style="--i: 3" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/parvez24h" target="_blank" class="social-link" style="--i: 4" title="X"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/parvez24h" target="_blank" class="social-link" style="--i: 5" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:parvezz24h@gmail.com" class="social-link" style="--i: 6" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="img/profile.jpg" alt="Md Parvez Profile">
+        </div>
+    </section>
 
-  <!-- Hero Section  -->
-  <section id="hero">
-    <div class="hero container">
-      <div>
-        <h1>Hello, I'm<span></span></h1>
-        <h1>Md Parvez <span></span></h1>
-        <a href="resume.html" type="button" class="cta">Download CV</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Passionate Mobile App Developer with 3+ years of experience in Android (Java/Kotlin) and cross-platform development using Flutter, Jetpack Compose, Firebase, REST APIs, Git, CI/CD, and app deployment to the Google Play Store.</p>
+                <p>Skilled in creating innovative solutions and continuously looking for challenging roles to grow and contribute to impactful projects.</p>
+                <div class="about-stats">
+                    <div class="stat-item" style="--i: 1">
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item" style="--i: 2">
+                        <h3>10+</h3>
+                        <p>Apps Deployed</p>
+                    </div>
+                    <div class="stat-item" style="--i: 3">
+                        <h3>4</h3>
+                        <p>Major Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category" style="--i: 1">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C</span>
+                    </div>
+                </div>
+                <div class="skill-category" style="--i: 2">
+                    <h3><i class="fas fa-mobile-alt"></i> Frameworks</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Android SDK</span>
+                        <span class="skill-tag">Jetpack Compose</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                    </div>
+                </div>
+                <div class="skill-category" style="--i: 3">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Claude CLI</span>
+                        <span class="skill-tag">ChatGPT</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+                <div class="skill-category" style="--i: 4">
+                    <h3><i class="fas fa-cogs"></i> Soft Skills</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Problem-Solving</span>
+                        <span class="skill-tag">Debugging</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                        <span class="skill-tag">Remote Collaboration</span>
+                    </div>
+                </div>
+                <div class="skill-category" style="--i: 5">
+                    <h3><i class="fas fa-graduation-cap"></i> Other</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">SOLID principles</span>
+                        <span class="skill-tag">Clean Architecture</span>
+                        <span class="skill-tag">MVVM</span>
+                        <span class="skill-tag">App deployment to Google Play Store</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/parvez.jpg" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <p>
-          My name is Md Parvez, and I'm a dedicated mobile app developer with expertise in Flutter and Android. Currently, I work as a Jr. Software Engineer at Brotect Technology Ltd., where I focus on creating efficient, user-centered mobile applications. I hold a B.Sc. in Computer Science and Engineering, which has equipped me with a strong technical foundation and problem-solving skills. I am particularly passionate about remote work opportunities that allow me to leverage my skills in building scalable and impactful mobile solutions while collaborating with diverse, global teams.
-         
-        </p>
-        <a href="resume.html" class="cta">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
-  
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" style="--i: 1">
+                    <div class="project-image">
+                        <img src="img/project1.png" alt="Notes API">
+                    </div>
+                    <div class="project-content">
+                        <h3>Notes API</h3>
+                        <p>Personal Project — Node.js + Express.js + MongoDB. Developed REST APIs with features including user registration, login, and full CRUD operations for notes (create, read, update, delete), deployed live at parvez-notes.vercel.app.</p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                            <span>REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/parvez24h/NotesAPI" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="https://parvez-notes.vercel.app" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ce</h1>
-        <p></p>
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
-          <h2>Mobile App Development</h2>
-          <p>Experienced Flutter and Android developer offering remote services to build high-performance, cross-platform apps tailored to client needs. Skilled in Flutter, Dart, Java, and Kotlin, with expertise in Firebase, API integration, and custom UI/UX. Dedicated to delivering optimized, scalable solutions and ensuring seamless communication for timely, successful project completion.</p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  <!-- End Service Section -->
+                <div class="project-card" style="--i: 2">
+                    <div class="project-image">
+                        <img src="img/project2.png" alt="Notes Android">
+                    </div>
+                    <div class="project-content">
+                        <h3>Notes Android</h3>
+                        <p>Personal Project — Native Android + RestAPI. Implemented in a native Android app, featuring a splash screen and custom no-internet alert dialogs for enhanced user experience.</p>
+                        <div class="project-tech">
+                            <span>Android</span>
+                            <span>Java</span>
+                            <span>Kotlin</span>
+                            <span>REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/parvez24h/Notes-Android" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fab fa-google-play"></i> App</a>
+                        </div>
+                    </div>
+                </div>
 
-  
+                <div class="project-card" style="--i: 3">
+                    <div class="project-image">
+                        <img src="img/project3.png" alt="Notes App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Notes App</h3>
+                        <p>Personal Project — Flutter + Firebase. Features include user login, note creation, and Firebase sync, built with Riverpod for state management.</p>
+                        <div class="project-tech">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Riverpod</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/parvez24h/Notes" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div>
-        <h1 class="section-title">Contact <span>info</span></h1>
-      </div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2>+880 1736 194336</h2>
-            <h2>+880 1731 991424</h2>
-          </div>
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item" style="--i: 1">
+                    <div class="timeline-date">Jul 2025 - Continuing</div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>Info Inlet — Dhaka, Bangladesh</h4>
+                        <p>Designed, developed, and deployed cross-platform mobile applications using <b>Flutter</b> and <b>Dart</b>.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" style="--i: 2">
+                    <div class="timeline-date">Feb 2023 - Jun 2025</div>
+                    <div class="timeline-content">
+                        <h3>Jr. Software Engineer</h3>
+                        <h4>Brotecs Technologies Ltd. — Dhaka, Bangladesh</h4>
+                        <p>Developed and maintained Android apps using Kotlin and Java.</p>
+                    </div>
+                </div>
+                <div class="timeline-item" style="--i: 3">
+                    <div class="timeline-date">Aug 2022 - Feb 2023</div>
+                    <div class="timeline-content">
+                        <h3>Intern</h3>
+                        <h4>Brotecs Technologies Ltd. — Dhaka, Bangladesh</h4>
+                        <p>Native Android App Development using Java/Kotlin under senior guidance.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-          <div class="contact-info">
-            <h1>Email</h1>
-            <h2>md.parvez@brotecs.com</h2>
-            <h2>parvezz24h@gmail.com</h2>
-          </div>
-        </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>Dhaka, Bangladesh</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Contact Section -->
+    </section>
 
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand">
-        <h1><span>M</span>d <span>P</span>arvez</h1>
-      </div>
-      <h2>Your Android App Developer</h2>
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.facebook.com/parvez24h"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-date">Jan 2019 - Dec 2022</div>
+                    <h3>Bachelor of Science in Computer Science & Engineering</h3>
+                    <h4>Daffodil International University — Dhaka, Bangladesh</h4>
+                </div>
+                <div class="education-card">
+                    <div class="education-date">Jun 2016 - Jun 2018</div>
+                    <h3>Higher Secondary School Certificate in Science</h3>
+                    <h4>Hazi Jafar Ali College — Kishorganj, Bangladesh</h4>
+                </div>
+            </div>
         </div>
-        <div class="social-item">
-          <a href="https://www.linkedin.com/in/parvez24h"><img src="https://img.icons8.com/bubbles/100/000000/linkedin.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://github.com/mdparvez2468"><img src="https://img.icons8.com/bubbles/100/000000/github.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://x.com/parvez24h"><img src="https://img.icons8.com/bubbles/100/000000/x.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.instagram.com/parvez24h"><img src="https://img.icons8.com/bubbles/100/000000/instagram.png" /></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.fiverr.com/parvez24h"><img src="https://img.icons8.com/bubbles/100/000000/fiverr.png" /></a>
-        </div>
+    </section>
 
-      </div>
-      <p>Copyright © 2020 Md Parvez. All rights reserved</p>
-    </div>
-  </section>
-  <!-- End Footer -->
-  <script src="./app.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's work together!</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities.</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>parvezz24h@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+8801736194336</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>22/1 Khilkhet, Dhaka-1229, Bangladesh</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required style="--i: 1">
+                    <input type="email" placeholder="Your Email" required style="--i: 2">
+                    <textarea placeholder="Your Message" rows="5" required style="--i: 3"></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Md Parvez. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
